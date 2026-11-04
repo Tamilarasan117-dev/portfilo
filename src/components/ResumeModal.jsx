@@ -44,11 +44,20 @@ export default function ResumeModal({ isOpen, onClose }) {
 
             <div className="flex items-center gap-3">
               <a
-                href="mailto:tamil636919@gmail.com"
+                href="/assets/Tamil_Arasan_Resume.pdf"
+                download="Tamil_Arasan_Resume.pdf"
                 className="interactive-item px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-nature-darkest font-mono text-xs font-bold flex items-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all"
               >
+                <Download className="w-3.5 h-3.5" />
+                <span>DOWNLOAD PDF</span>
+              </a>
+
+              <a
+                href="mailto:tamil636919@gmail.com"
+                className="interactive-item px-4 py-2 rounded-xl bg-nature-forest hover:bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-mono text-xs font-bold flex items-center gap-2 transition-all"
+              >
                 <Mail className="w-3.5 h-3.5" />
-                <span>CONTACT DIRECTLY</span>
+                <span>EMAIL</span>
               </a>
 
               <button
