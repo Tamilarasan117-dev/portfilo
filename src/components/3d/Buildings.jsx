@@ -37,9 +37,10 @@ function generateCityBlocks() {
     }
   }
 
-  // Right Boulevard City Blocks
+  // Right Boulevard City Blocks (Offset to keep the Elevated Metro corridor at X=22 clear)
   for (let z = -90; z <= 100; z += 18) {
-    for (let x = 20; x <= 80; x += 18) {
+    for (let x = 32; x <= 86; x += 18) {
+      if (Math.abs(x - 22) < 6) continue // Keep metro viaduct clear
       if (Math.abs(z - -25) < 9 && Math.abs(x - 35) < 14) continue
       if (Math.abs(z - 15) < 9 && Math.abs(x - 45) < 14) continue
       if (Math.abs(z - 50) < 9 && Math.abs(x - 35) < 14) continue

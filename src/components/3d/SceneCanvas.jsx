@@ -14,6 +14,8 @@ import { PostEffects } from './PostEffects'
 import { Pedestrians } from './Pedestrians'
 import { RainParticles } from './RainParticles'
 import { StreetDetails } from './StreetDetails'
+import { FlyingBirdsAndClouds } from './FlyingBirdsAndClouds'
+import { MetroTrainSystem } from './MetroTrainSystem'
 import { PORTFOLIO_DATA } from '../../data/portfolioData'
 
 function CityWorldSimulator({ 
@@ -66,11 +68,17 @@ function CityWorldSimulator({
       {/* Atmospheric Lighting, Sky & Fog */}
       <LightingFog />
 
+      {/* Soaring Bird Flock & Drifting High-Altitude Clouds */}
+      <FlyingBirdsAndClouds />
+
       {/* Rain & Volumetric Mist Particles Falling Through Neon Lights */}
       <RainParticles count={1400} />
 
       {/* City Ground, Asphalt Roads & Overhead Structures */}
       <GroundRoads />
+
+      {/* Elevated Metro Rail Bridge, High-Tech Station & Automated Bullet Train */}
+      <MetroTrainSystem />
 
       {/* Realistic Streetlights */}
       <Streetlights />
